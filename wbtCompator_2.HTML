@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		body, div{
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper {position:relative;
+			width: 1px;
+		}
+		.topArea{
+				overflow: hidden;
+				position:absolute;
+				top:0;
+				left: 0;
+			}
+		.vertical_border{
+			border-right: 3px solid #fff;
+		}
+
+		.horiontal_border{
+			border-bottom: 3px solid #fff;
+		}
+
+		.topArea_disabled{
+			border-right: none;
+		}
+
+
+	</style>
+	<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="js/wbtCompator.js">
+	</script>
+</head>
+<body>
+	<p>
+ 	sadasgdsa;DMG;lsd;lgdsfgmdfagmnsadnglkmasl gds
+ 	<div class="sas">
+ 		sdagjnsdalk;gvn;sdnv;ksdanvl;k
+ 		<p class="first"></p>
+ 	</div>
+
+ </p>
+	<div class="second"></div>
+	<div class="second"></div>
+</body>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$(".first").wbtComparator({
+			srcTop: "img/bigBoard_0.jpg",
+		    srcBottom: "img/bigBoard_1.jpg",
+		    border: "vertical"
+	    });
+	    $(".second").wbtComparator({
+			srcTop: "img/bigBoard_0.jpg",
+		    srcBottom: "img/bigBoard_1.jpg",
+		    border: "vertical"
+	    });
+	});
+</script>
+</html>
